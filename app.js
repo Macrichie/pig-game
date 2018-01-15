@@ -92,7 +92,7 @@ document.querySelector('.btn-hold').addEventListener('click', () => {
 
 });
 
-/*
+
 function nextPlayer() {
         // Next Player
         activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
@@ -112,7 +112,7 @@ function nextPlayer() {
         //document.querySelector('.dice').style.display = 'none';
 }
 
-
+/*
 // New Game
 document.querySelector('.btn-new').addEventListener('click', init);
 
