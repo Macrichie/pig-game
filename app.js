@@ -75,9 +75,23 @@ document.querySelector('.btn-hold').addEventListener('click', () => {
         scores[activePlayer] += roundScore;
         // Update the UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+        
+        let input = document.querySelector('.final-score').value;
+        let winningScore;
+
+            //if input value equals undefined, 0, null or "" then COERCED to false
+            //anything else is COERCED to true
+        if(input) {
+            winningScore = input;
+        }else {
+            winningScore = 100; // set default winning score
+        }
+
 
         // Check if player won
-        if(scores[activePlayer] >= 100) {
+
+
+        if(scores[activePlayer] >= winningScore) {
             document.querySelector('#name-' + activePlayer).textContent = 'WINNER!';
             document.querySelector('.dice').hidden = true;
 
