@@ -112,7 +112,7 @@ function nextPlayer() {
         //document.querySelector('.dice').style.display = 'none';
 }
 
-/*
+
 // New Game
 document.querySelector('.btn-new').addEventListener('click', init);
 
@@ -125,4 +125,3 @@ document.querySelector('.btn-new').addEventListener('click', init);
 
 //document.querySelector('.dice').hidden = true;
 
-*/
