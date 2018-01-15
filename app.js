@@ -67,7 +67,7 @@ document.querySelector('.btn-roll').addEventListener('click', ()=> {
 
 });
 
-/*
+
 // Hold
 document.querySelector('.btn-hold').addEventListener('click', () => {
     if(gamePlaying) {
@@ -92,7 +92,7 @@ document.querySelector('.btn-hold').addEventListener('click', () => {
 
 });
 
-
+/*
 function nextPlayer() {
         // Next Player
         activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
