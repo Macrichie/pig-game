@@ -16,8 +16,8 @@ function init() {
     activePlayer = 0;
     gamePlaying = true;
 
-    document.getElementById('dice-1').hidden;
-    document.getElementById('dice-2').hidden;
+    document.getElementById('dice-1').style.display = 'none';
+    document.getElementById('dice-2').style.display = 'none';
 
     document.getElementById('score-0').textContent = '0';
     document.getElementById('score-1').textContent = '0';
@@ -53,6 +53,7 @@ document.querySelector('.btn-roll').addEventListener('click', ()=> {
 
 
         //3. Update the round score IF the rolled number is NOT equal to 1
+    
         if(dice === 6 && lastDice === 6) {
             // Player loses score
             scores[activePlayer] = 0;
@@ -70,7 +71,7 @@ document.querySelector('.btn-roll').addEventListener('click', ()=> {
         }
 
         lastDice = dice;
-
+        
     }
 
 });
@@ -97,13 +98,11 @@ document.querySelector('.btn-hold').addEventListener('click', () => {
 
 
         // Check if player won
-
-
         if(scores[activePlayer] >= winningScore) {
             document.querySelector('#name-' + activePlayer).textContent = 'WINNER!';
 
-            document.getElementById('dice-1').hidden = true;
-            document.getElementById('dice-2').hidden = true;
+            document.getElementById('dice-1').style.display = 'none';
+            document.getElementById('dice-2').style.display = 'none';
 
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
@@ -132,8 +131,8 @@ function nextPlayer() {
         //document.querySelector('.player-0-panel').classList.remove('active');
         //document.querySelector('.player-1-panel').classList.add('active');
 
-        document.getElementById('dice-1').hidden = true;
-        document.getElementById('dice-2').hidden = true;
+        document.getElementById('dice-1').style.display = 'none';
+        document.getElementById('dice-2').style.display = 'none';
         //document.querySelector('.dice').style.display = 'none';
 }
 
