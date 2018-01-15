@@ -32,7 +32,7 @@ function init() {
 
 init();
 
-/*
+
 // Roll dice
 document.querySelector('.btn-roll').addEventListener('click', ()=> {
     if(gamePlaying) {
@@ -67,7 +67,7 @@ document.querySelector('.btn-roll').addEventListener('click', ()=> {
 
 });
 
-
+/*
 // Hold
 document.querySelector('.btn-hold').addEventListener('click', () => {
     if(gamePlaying) {
